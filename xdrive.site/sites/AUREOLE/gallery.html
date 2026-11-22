@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="description"
+          content="Explore Laura Sofía Mosquera Rubio’s skills in Excel, data analysis, programming, web design, prototyping, leadership, and languages.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Laura’s Portfolio">
+    <meta property="og:title" content="Skills | Laura Sofía Mosquera Rubio">
+    <meta property="og:description"
+          content="See how Laura applies her skills in projects, internships, and student leadership.">
+
+    <title>Skills | Laura Sofía Mosquera Rubio</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Montserrat:wght@300;400;500;600&amp;display=swap">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
+    <link rel="stylesheet"
+          href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .skills-page .skills-banner {
+            background: linear-gradient(rgba(10, 10, 10, 0.35), rgba(10, 10, 10, 0.72)),
+                        url("images/interests\ banner.png") center / cover no-repeat;
+        }
+
+        .skills-page .skills-section {
+            background-color: #101010;
+            padding: clamp(3rem, 7vw, 6rem) 0;
+        }
+
+        .skills-page .skill-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: clamp(1.4rem, 3vw, 2rem);
+            background-color: #1a1a1a;
+            border: 1px solid rgba(201, 169, 98, 0.3);
+        }
+
+        .skills-page .skill-icon {
+            display: inline-grid;
+            place-items: center;
+            align-self: flex-start;
+            width: 3rem;
+            height: 3rem;
+            margin-bottom: 1.25rem;
+            border: 1px solid rgba(201, 169, 98, 0.45);
+            color: #d7b873;
+            font-size: 1.3rem;
+        }
+
+        .skills-page .skill-card h2 {
+            color: #f5f2ea;
+            font-family: "Cormorant Garamond", Georgia, serif;
+            font-size: 1.9rem;
+        }
+
+        .skills-page .skill-card p,
+        .skills-page .skill-card li,
+        .skills-page .skill-card dd {
+            color: #d2cec5;
+            line-height: 1.65;
+        }
+
+        .skills-page .skill-card ul {
+            padding-left: 1.25rem;
+        }
+
+        .skills-page .skill-card dt {
+            color: #f5f2ea;
+        }
+
+        .skills-page .skill-link {
+            align-self: flex-start;
+            margin-top: auto;
+            color: #d7b873;
+            text-decoration: underline;
+            text-underline-offset: 0.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">Laura S. Mosquera R.</div>
+            <div class="preloader-line"></div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">LAURA’S PORTFOLIO</a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">ABOUT ME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">INTERESTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">PROJECTS</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html" aria-current="page">SKILLS</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">EXPERIENCE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary" href="CV_LAURA.pdf" download>DOWNLOAD CV</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="skills-page">
+        <section class="hero u19" aria-labelledby="skills-title">
+            <div class="hero-bg skills-banner" aria-hidden="true"></div>
+
+            <div class="hero-content u10">
+                <h1 class="hero-title" id="skills-title">My Skills</h1>
+            </div>
+        </section>
+
+        <section class="skills-section" aria-label="Skills and examples">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+                    <div class="col">
+                        <article class="skill-card">
+                            <span class="skill-icon" aria-hidden="true">
+                                <i class="bi bi-bar-chart"></i>
+                            </span>
+                            <h2>Excel &amp; Data Analysis</h2>
+                            <p>
+                                At BYD LATAM, I organized customer survey data and used
+                                pivot tables to summarize responses for Net Promoter
+                                Score (NPS) analysis.
+                            </p>
+                            <ul>
+                                <li>Pivot tables and data organization</li>
+                                <li>Microsoft Office Specialist: Excel Expert</li>
+                                <li>Excel Specialist exam score: 1000/1000</li>
+                            </ul>
+                            <a class="skill-link" href="blog.html#byd-latam">
+                                Read about my BYD internship
+                            </a>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="skill-card">
+                            <span class="skill-icon" aria-hidden="true">
+                                <i class="bi bi-code-slash"></i>
+                            </span>
+                            <h2>Programming</h2>
+                            <p>
+                                I developed a foundation in Python through my technology
+                                training. I also led my student programming department
+                                and helped coordinate projects for a technology showcase.
+                            </p>
+                            <ul>
+                                <li>Python fundamentals</li>
+                                <li>Student technology project coordination</li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="skill-card">
+                            <span class="skill-icon" aria-hidden="true">
+                                <i class="bi bi-window"></i>
+                            </span>
+                            <h2>Web Design</h2>
+                            <p>
+                                I designed the HEALTHBOOST website to explain our wellness
+                                proposal for young adults and show how nutrition, physical
+                                activity, and emotional support fit together.
+                            </p>
+                            <ul>
+                                <li>Website layout and content organization</li>
+                                <li>Design for a specific audience</li>
+                            </ul>
+                            <a class="skill-link" href="menu.html#healthboost-title">
+                                See the HEALTHBOOST project
+                            </a>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="skill-card">
+                            <span class="skill-icon" aria-hidden="true">
+                                <i class="bi bi-cpu"></i>
+                            </span>
+                            <h2>Technical Prototyping</h2>
+                            <p>
+                                I worked with my team on a low-cost CNC laser prototype
+                                for cutting and engraving. I also explored mechatronics
+                                through workshops at Universidad Tecnológica de Panamá.
+                            </p>
+                            <ul>
+                                <li>CNC motion control</li>
+                                <li>NEMA 17 motors, GRBL, and LaserGRBL</li>
+                            </ul>
+                            <a class="skill-link" href="menu.html">
+                                Explore my engineering projects
+                            </a>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="skill-card">
+                            <span class="skill-icon" aria-hidden="true">
+                                <i class="bi bi-people"></i>
+                            </span>
+                            <h2>Leadership &amp; Communication</h2>
+                            <p>
+                                Through MEDUCA’s Jóvenes Líderes program, I helped with
+                                learning activities for students at different grade
+                                levels. On the HEALTHBOOST team, I took on leadership
+                                responsibilities and helped present our business proposal.
+                            </p>
+                            <ul>
+                                <li>Team coordination</li>
+                                <li>Public speaking and project presentation</li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="skill-card">
+                            <span class="skill-icon" aria-hidden="true">
+                                <i class="bi bi-translate"></i>
+                            </span>
+                            <h2>Languages</h2>
+                            <p>
+                                I developed my English through the ¡Supérate! program
+                                and practiced speaking in front of an audience in an
+                                English public speaking competition.
+                            </p>
+                            <dl class="mb-0">
+                                <dt>Spanish</dt>
+                                <dd>Native</dd>
+                                <dt>English</dt>
+                                <dd>B2</dd>
+                                <dt>Mandarin</dt>
+                                <dd class="mb-0">Basic</dd>
+                            </dl>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h3 class="footer-brand">Laura’s Portfolio</h3>
+                    <p class="footer-text">
+                        I’m interested in technology, data analysis, and biomedical engineering.
+                        Explore my projects, professional experience, and community work.
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="menu.html">Projects</a></li>
+                        <li><a href="index.html#tasting">My Journey</a></li>
+                        <li><a href="index.html#gallery">Gallery</a></li>
+                        <li><a href="index.html#blog">Certifications &amp; Achievements</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="footer-contact">
+                        <p>
+                            <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+                            Based in Panama
+                        </p>
+                        <p>
+                            <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                            <a href="tel:+50763151594">+507 6315-1594</a>
+                        </p>
+                        <p>
+                            <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                            <a href="mailto:lsmosquera.05@gmail.com">lsmosquera.05@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">LinkedIn</h4>
+                    <a class="btn btn-primary"
+                       href="https://www.linkedin.com/in/laura-sofia-mosquera-rubio-261b18400/"
+                       target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        View LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 Laura’s Portfolio.</p>
+                <div>
+                    <a class="u6" href="privacy.html">Privacy Policy</a>
+                    <a class="u3" href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

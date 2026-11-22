@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="description"
+          content="Explore Laura Sofía Mosquera Rubio’s interests in biomedical engineering, programming, entrepreneurship, languages, and the arts.">
+    <title>Interests | Laura Sofía Mosquera Rubio</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Montserrat:wght@300;400;500;600&amp;display=swap">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
+    <link rel="stylesheet"
+          href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .interests-banner {
+            background:
+                linear-gradient(rgba(10, 10, 10, 0.25), rgba(10, 10, 10, 0.6)),
+                url("images/interests2.png") center / cover no-repeat;
+        }
+
+        .interests-page .tasting-track {
+            cursor: grab;
+            user-select: none;
+        }
+
+        .interests-page .tasting-track.is-dragging {
+            cursor: grabbing;
+            scroll-snap-type: none;
+            scroll-behavior: auto;
+        }
+
+        .interests-page .interest-card-icon {
+            display: grid;
+            place-items: center;
+            height: clamp(8rem, 16vw, 13rem);
+            color: #e1c17a;
+            background: radial-gradient(ellipse at center, #312719 0%, #161616 75%);
+            border-bottom: 1px solid #54462c;
+            font-size: clamp(2.75rem, 5vw, 4.25rem);
+        }
+
+        .interests-page .interests-progress {
+            width: 100%;
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+
+        .interests-page .tasting-track:focus-visible,
+        .interests-page .interest-controls button:focus-visible {
+            outline: 2px solid #e1c17a;
+            outline-offset: -2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="preloader-logo">Laura S. Mosquera R.</div>
+            <div class="preloader-line"></div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">LAURA’S PORTFOLIO</a>
+
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">ABOUT ME</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html" aria-current="page">INTERESTS</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">PROJECTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">SKILLS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">EXPERIENCE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary" href="CV_LAURA.pdf" download>DOWNLOAD CV</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="interests-page">
+        <section class="hero u19" aria-labelledby="interests-title">
+            <div class="hero-bg interests-banner" aria-hidden="true"></div>
+            <div class="hero-content u10">
+                <h1 class="hero-title" id="interests-title">My Interests</h1>
+            </div>
+        </section>
+
+        <section class="tasting-section" aria-labelledby="interests-heading">
+            <div class="container position-relative">
+                <h2 class="section-title" id="interests-heading">What I’m Curious About</h2>
+                <p class="tasting-intro">
+                    I’m curious about how science and technology can solve everyday
+                    problems. I’m especially interested in how engineering can make
+                    medical technology more accessible in Panama.
+                </p>
+            </div>
+
+            <div class="tasting-scroll-wrapper position-relative">
+                <div class="tasting-track" id="interestsTrack"
+                     role="region" aria-label="Personal and professional interests"
+                     tabindex="0">
+                    <article class="tasting-card">
+                        <div class="interest-card-icon" aria-hidden="true">
+                            <i class="bi bi-heart-pulse"></i>
+                        </div>
+                        <div class="tasting-card-body">
+                            <span class="tasting-course-label">Health Sciences</span>
+                            <h3 class="tasting-card-title">Biomedical Engineering</h3>
+                            <p class="tasting-card-desc">
+                                I’m fascinated by human anatomy and how medical devices help
+                                clinicians diagnose and care for patients. I want to learn
+                                how engineering, software, and medicine shape these tools.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="tasting-card">
+                        <div class="interest-card-icon" aria-hidden="true">
+                            <i class="bi bi-search"></i>
+                        </div>
+                        <div class="tasting-card-body">
+                            <span class="tasting-course-label">Research</span>
+                            <h3 class="tasting-card-title">Biotechnology</h3>
+                            <p class="tasting-card-desc">
+                                I’d like to learn how researchers use biology to detect
+                                disease and how they turn discoveries into tools that
+                                benefit patients.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="tasting-card">
+                        <div class="interest-card-icon" aria-hidden="true">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+                        <div class="tasting-card-body">
+                            <span class="tasting-course-label">Technology</span>
+                            <h3 class="tasting-card-title">Programming &amp; AI</h3>
+                            <p class="tasting-card-desc">
+                                I started learning Python through ¡Supérate! and want
+                                to keep exploring artificial intelligence, data analysis,
+                                and automation. I enjoy building websites and digital tools.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="tasting-card">
+                        <div class="interest-card-icon" aria-hidden="true">
+                            <i class="bi bi-lightbulb"></i>
+                        </div>
+                        <div class="tasting-card-body">
+                            <span class="tasting-course-label">Entrepreneurship</span>
+                            <h3 class="tasting-card-title">Building Projects</h3>
+                            <p class="tasting-card-desc">
+                                I enjoy working with teams to develop ideas. I designed the
+                                HEALTHBOOST website and run my own embroidery business.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="tasting-card">
+                        <div class="interest-card-icon" aria-hidden="true">
+                            <i class="bi bi-music-note-beamed"></i>
+                        </div>
+                        <div class="tasting-card-body">
+                            <span class="tasting-course-label">Arts &amp; Culture</span>
+                            <h3 class="tasting-card-title">Singing &amp; Salsa</h3>
+                            <p class="tasting-card-desc">
+                                I enjoy singing and dancing salsa. Both are ways for me
+                                to express myself and connect with other people.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="tasting-card">
+                        <div class="interest-card-icon" aria-hidden="true">
+                            <i class="bi bi-translate"></i>
+                        </div>
+                        <div class="tasting-card-body">
+                            <span class="tasting-course-label">Languages</span>
+                            <h3 class="tasting-card-title">Language Learning</h3>
+                            <p class="tasting-card-desc">
+                                My current English level is B2, and I’m learning Mandarin
+                                at a basic level. I enjoy discovering new perspectives
+                                through languages.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="tasting-card">
+                        <div class="interest-card-icon" aria-hidden="true">
+                            <i class="bi bi-mortarboard"></i>
+                        </div>
+                        <div class="tasting-card-body">
+                            <span class="tasting-course-label">Future Goals</span>
+                            <h3 class="tasting-card-title">Studying Abroad</h3>
+                            <p class="tasting-card-desc">
+                                I’d love to study abroad and bring what I learn back to
+                                Panama, where I hope to contribute to projects that make
+                                medical technology more accessible.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="container">
+                    <div class="tasting-progress" aria-hidden="true">
+                        <div class="tasting-progress-bar interests-progress"
+                             id="interestsProgress"></div>
+                    </div>
+
+                    <div class="interest-controls d-flex justify-content-center gap-3 mt-3">
+                        <button class="btn btn-outline" type="button" id="interestsPrev"
+                                aria-controls="interestsTrack" aria-label="Previous interest">
+                            <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                        </button>
+                        <button class="btn btn-outline" type="button" id="interestsNext"
+                                aria-controls="interestsTrack" aria-label="Next interest">
+                            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <p class="tasting-hint">
+                        <i class="bi bi-arrow-left-right" aria-hidden="true"></i>
+                        Drag or swipe to explore my interests
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h3 class="footer-brand">Laura’s Portfolio</h3>
+                    <p class="footer-text">
+                        Explore my projects, professional experience, and community work.
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="menu.html">Projects</a></li>
+                        <li><a href="index.html#tasting">My Journey</a></li>
+                        <li><a href="index.html#gallery">Gallery</a></li>
+                        <li><a href="index.html#blog">Certifications &amp; Achievements</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="footer-contact">
+                        <p><i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Based in Panama</p>
+                        <p>
+                            <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                            <a href="tel:+50763151594">+507 6315-1594</a>
+                        </p>
+                        <p>
+                            <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                            <a href="mailto:lsmosquera.05@gmail.com">lsmosquera.05@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">LinkedIn</h4>
+                    <a class="btn btn-primary"
+                       href="https://www.linkedin.com/in/laura-sofia-mosquera-rubio-261b18400/"
+                       target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        View LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 Laura’s Portfolio.</p>
+                <div>
+                    <a class="u6" href="privacy.html">Privacy Policy</a>
+                    <a class="u3" href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+        (() => {
+            const track = document.getElementById("interestsTrack");
+            const progress = document.getElementById("interestsProgress");
+            const previous = document.getElementById("interestsPrev");
+            const next = document.getElementById("interestsNext");
+            const cards = track.querySelectorAll(".tasting-card");
+            const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+            let drag = null;
+
+            function updateProgress() {
+                const max = track.scrollWidth - track.clientWidth;
+                const position = Math.min(max, Math.max(0, track.scrollLeft));
+                progress.style.transform = `scaleX(${max > 0 ? position / max : 1})`;
+                previous.disabled = position <= 1;
+                next.disabled = position >= max - 1;
+            }
+
+            function move(direction) {
+                const step = cards[1].offsetLeft - cards[0].offsetLeft;
+                track.scrollBy({
+                    left: direction * step,
+                    behavior: reducedMotion.matches ? "instant" : "smooth"
+                });
+            }
+
+            previous.addEventListener("click", () => move(-1));
+            next.addEventListener("click", () => move(1));
+            track.addEventListener("scroll", updateProgress, { passive: true });
+            window.addEventListener("resize", updateProgress);
+
+            track.addEventListener("keydown", (event) => {
+                if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
+                    event.preventDefault();
+                    move(event.key === "ArrowLeft" ? -1 : 1);
+                }
+            });
+
+            track.addEventListener("pointerdown", (event) => {
+                if (event.pointerType !== "mouse" || event.button !== 0) return;
+
+                drag = {
+                    pointerId: event.pointerId,
+                    startX: event.clientX,
+                    startScroll: track.scrollLeft
+                };
+
+                track.setPointerCapture(event.pointerId);
+                track.classList.add("is-dragging");
+            });
+
+            track.addEventListener("pointermove", (event) => {
+                if (!drag || event.pointerId !== drag.pointerId) return;
+
+                track.scrollLeft = drag.startScroll - (event.clientX - drag.startX);
+            });
+
+            track.addEventListener("lostpointercapture", () => {
+                drag = null;
+                track.classList.remove("is-dragging");
+                updateProgress();
+            });
+
+            updateProgress();
+        })();
+    </script>
+</body>
+</html>

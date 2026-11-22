@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" role="img" aria-label="Team photo placeholder">
+  <rect width="600" height="800" fill="#1a1a1a"/>
+  <rect x="24" y="24" width="552" height="752" fill="none" stroke="#c9a962" stroke-opacity=".35" stroke-width="2"/>
+  <circle cx="300" cy="300" r="92" fill="none" stroke="#c9a962" stroke-opacity=".7" stroke-width="3"/>
+  <path d="M120 640c0-110 80-190 180-190s180 80 180 190" fill="none" stroke="#c9a962" stroke-opacity=".7" stroke-width="3"/>
+  <text x="300" y="720" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="26" fill="#c9a962" fill-opacity=".8" letter-spacing="3">YOUR PHOTO</text>
+</svg>
